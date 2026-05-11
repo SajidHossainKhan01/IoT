@@ -1,0 +1,18 @@
+Some advanced Settings
+
+It has a 1x4 (2.54mm pitch) pin header for connecting power (5V and 0V), and for controlling the 2 relays. The pins are marked on the PCB:
+
+GND - Connect 0V to this pin.
+IN1 - Controls relay 1, active Low! Relay will turn on when this input goes below about 2.0V
+IN2 - Controls relay 2, active Low! Relay will turn on when this input goes below about 2.0V
+VCC - Connect 5V to this pin. Is used to power the opto couplers
+There is a second 1x3 (2.54mm pitch) pin header for supplying the "relay side" of the board with 5V. At delivery, a jumper is present on this header selecting the 5V signal from the 1x4 pin header to power the relays. For default operation, don't change this jumper!
+
+Advanced
+
+The pins of the 1x3 pin header are marked on the PCB:
+
+RY-VCC - This is the 5V required for the relays. At delivery, a jumper is present on this and the adjacent (VCC) pin.
+VCC - This is the 5V VCC supplied on the 1x4 pin connector
+GND - Connected to 0V pin of 1x4 pin header
+If opto isolation is required, an isolated 5V supply should be used. For normal operation, a jumper bewtween pins 1 and 2 selects the 5V signal from the 1x4 pin header. This means both the "input side", and "relay side" use the same 5V supply, and there is no opto-isolation.
